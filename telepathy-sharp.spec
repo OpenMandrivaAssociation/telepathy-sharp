@@ -2,13 +2,14 @@
 
 Name:           telepathy-sharp
 Version:        0.13.2
-Release:        %mkrel 0.svn%rev.1
+Release:        %mkrel 0.svn%rev.2
 Summary:        Telepathy-sharp is a .NET package containing proxy classes for use in clients 
 
 Group:          System/Libraries
 License:        MIT
 URL:            http://tapioca-voip.sourceforge.net/wiki/index.php/SubProjects
 Source0:        %{name}-rev%rev.tar.bz2
+Patch: telepathy-sharp-dir.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires:  mono-devel
@@ -30,6 +31,7 @@ Telepathy-sharp is a .NET package containing proxy classes for use in clients.
 
 %prep
 %setup -q -n %name
+%patch
 ./autogen.sh
 
 %build
