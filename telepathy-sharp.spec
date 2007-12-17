@@ -10,7 +10,6 @@ License:        MIT
 URL:            http://tapioca-voip.sourceforge.net/wiki/index.php/SubProjects
 Source0:        %{name}-rev%rev.tar.bz2
 Patch: telepathy-sharp-dir.patch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires:  mono-devel
 BuildRequires:  gnome-common
