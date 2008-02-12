@@ -17,7 +17,6 @@ BuildRequires:  gnome-common
 BuildRequires:  ndesk-dbus
 
 %description
-
 Telepathy-sharp is a .NET package containing proxy classes for use in clients. 
 
 %files
