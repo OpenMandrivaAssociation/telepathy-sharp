@@ -2,7 +2,7 @@
 
 Name:           telepathy-sharp
 Version:        0.13.2
-Release:        %mkrel 0.svn%rev.2
+Release:        %mkrel -c svn%rev 3
 Summary:        .NET package containing proxy classes for use in clients 
 
 Group:          System/Libraries
@@ -14,19 +14,18 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 BuildRequires:  mono-devel
 BuildRequires:  gnome-common
-BuildRequires:  ndesk-dbus
+BuildRequires:  ndesk-dbus-devel
 
 %description
 Telepathy-sharp is a .NET package containing proxy classes for use in clients. 
 
-%files
-%defattr(-,root,root,-)
-%doc README
-%{_prefix}/lib/mono/gac/INdT.Telepathy/
-%{_prefix}/lib/mono/telepathy-sharp/INdT.Telepathy.dll
-%{_datadir}/pkgconfig/telepathy-sharp.pc
+%package devel
+Summary: Development files for %name
+Group: Development/Other
+Requires: %name = %version-%release
 
-#--------------------------------------------------------------------
+%description devel
+Telepathy-sharp is a .NET package containing proxy classes for use in clients. 
 
 %prep
 %setup -q -n %name
@@ -43,3 +42,13 @@ rm -rf $RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(-,root,root,-)
+%doc README
+%{_prefix}/lib/mono/gac/INdT.Telepathy/
+%{_prefix}/lib/mono/telepathy-sharp/INdT.Telepathy.dll
+
+%files devel
+%defattr(-,root,root,-)
+%{_datadir}/pkgconfig/telepathy-sharp.pc
