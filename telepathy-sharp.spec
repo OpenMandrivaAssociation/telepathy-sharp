@@ -2,7 +2,7 @@
 
 Name:           telepathy-sharp
 Version:        0.13.2
-Release:        %mkrel -c svn%rev 3
+Release:        %mkrel -c svn%rev 4
 Summary:        .NET package containing proxy classes for use in clients 
 
 Group:          System/Libraries
