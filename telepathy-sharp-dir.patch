@@ -1,0 +1,11 @@
+Index: telepathy-sharp.pc.in
+===================================================================
+--- telepathy-sharp.pc.in	(Revision 2034)
++++ telepathy-sharp.pc.in	(Arbeitskopie)
+@@ -6,5 +6,5 @@
+ Description: Telepathy# - The INdT Telepathy .NET library
+ Version: @VERSION@
+ Cflags: 
+-Libs: -r:${libdir}/telepathy-sharp/INdT.Telepathy.dll
++Libs: -r:${libdir}/mono/telepathy-sharp/INdT.Telepathy.dll
+ Requires: ndesk-dbus-1.0
