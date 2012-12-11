@@ -52,3 +52,38 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(-,root,root,-)
 %{_datadir}/pkgconfig/telepathy-sharp.pc
+
+
+%changelog
+* Sun Aug 14 2011 Götz Waschk <waschk@mandriva.org> 0.13.2-0.svn2034.4mdv2012.0
++ Revision: 694491
+- rebuild
+
+* Mon Aug 09 2010 Götz Waschk <waschk@mandriva.org> 0.13.2-0.svn2034.3mdv2011.0
++ Revision: 567920
+- split out devel package
+- update build deps
+
+* Mon Feb 18 2008 Thierry Vignaud <tv@mandriva.org> 0.13.2-0.svn2034.2mdv2011.0
++ Revision: 170576
+- fix "foobar is blabla" summary (=> "blabla") so that it looks nice in rpmdrake
+- fix spacing at top of description
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+* Mon Aug 27 2007 Götz Waschk <waschk@mandriva.org> 0.13.2-0.svn2034.2mdv2008.0
++ Revision: 71870
+- fix dir in pkgconfig file
+
+* Thu Aug 09 2007 Götz Waschk <waschk@mandriva.org> 0.13.2-0.svn2034.1mdv2008.0
++ Revision: 60815
+- use the right version
+- make it a proper noarch package
+- fix License
+- fix file list
+
+  + Nicolas Lécureuil <nlecureuil@mandriva.com>
+    - Import telepathy-sharp
+
