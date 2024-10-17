@@ -7,7 +7,7 @@ Summary:        .NET package containing proxy classes for use in clients
 
 Group:          System/Libraries
 License:        MIT
-URL:            http://tapioca-voip.sourceforge.net/wiki/index.php/SubProjects
+URL:            https://tapioca-voip.sourceforge.net/wiki/index.php/SubProjects
 Source0:        %{name}-rev%rev.tar.bz2
 Patch: telepathy-sharp-dir.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
