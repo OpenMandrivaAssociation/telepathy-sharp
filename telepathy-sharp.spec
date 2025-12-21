@@ -12,6 +12,11 @@ Source0:        %{name}-rev%rev.tar.bz2
 Patch: telepathy-sharp-dir.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  mono-devel
 BuildRequires:  gnome-common
 BuildRequires:  ndesk-dbus-devel
